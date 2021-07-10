@@ -9,7 +9,7 @@ $(document).ready(function () {
             } else {
                 $('.navbar').removeClass("sticky1");
             }
-            if (this.scrollY > 1800) {
+            if (this.scrollY > 1300) {
                 $('.navbar').addClass("sticky2");
 
             } else {

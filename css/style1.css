@@ -33,7 +33,7 @@ Navbar
 }
 .navbar.sticky2 {
   padding: 5px 0;
-  background: #c0c0c0;
+  background: #376fe0;
 }
 .navbar.sticky3 {
   padding: 5px 0;
@@ -83,10 +83,10 @@ Navbar
   color: crimson;
 }
 .navbar.sticky2 .logo a {
-  color: crimson;
+  color: rgb(255, 255, 255);
 }
 .navbar.sticky2 .menu a {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .navbar.sticky3 .logo a {
   color: crimson;
@@ -366,7 +366,9 @@ works
 ------------------------------------------------------------- */
 .works {
   min-height: 100vh;
-  background: url("../res/works/workbg.png");
+  background: url("../res/works/workbg.jpg") no-repeat center;
+
+  background-attachment: fixed;
 }
 .works h1 {
   text-align: center;
@@ -394,8 +396,14 @@ works
   height: 258px;
   margin: 20px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.7),
-    0 1px 2px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 28px rgba(74, 180, 255, 0.7),
+    0 1px 1px rgba(74, 180, 255, 0.7);
+  transition: all 0.5s ease;
+}
+.work-image:hover {
+  box-shadow: 0 10px 28px rgba(255, 255, 255, 0.7),
+    0 1px 1px rgba(255, 255, 255, 0.7);
+  /* cursor: url("../res/cursor/rock.cur"), default; */
 }
 
 .work-image img {
@@ -453,11 +461,12 @@ works
 .work-image:hover .work-details p {
   opacity: 1;
   transform: translateY(-40px);
+  display: none;
 }
 
 .work-more {
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -473,11 +482,12 @@ works
 }
 
 .work-more .work-read-more {
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
-  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  /* cursor: url("../res/cursor/rock.cur"), default; */
 }
 
 .work-more .work-read-more span {
@@ -538,6 +548,9 @@ Responsive
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+  .navbar.sticky1 .menu a {
+    color: rgb(255, 255, 255);
   }
   .max-width {
     max-width: 800px;
