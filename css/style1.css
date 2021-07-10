@@ -704,6 +704,9 @@ Responsive
   .skills h1 {
     font-size: 40px;
   }
+  .works h1 {
+    font-size: 40px;
+  }
   .skills h3 {
     font-size: 17px;
   }
@@ -725,6 +728,9 @@ Responsive
 }
 @media (max-width: 430px) {
   .skills h1 {
+    font-size: 30px;
+  }
+  .works h1 {
     font-size: 30px;
   }
 }
