@@ -9,6 +9,7 @@ div {
 }
 html {
   cursor: url("../res/cursor/white.cur"), default;
+  transition: all 0.3ms ease;
   scroll-behavior: smooth;
 }
 /* --------------------------------------------------------
@@ -366,7 +367,7 @@ works
 ------------------------------------------------------------- */
 .works {
   min-height: 100vh;
-  background: url("../res/works/workbg.jpg") no-repeat center;
+  background: url("../res/works/workbg.jpg") center;
 
   background-attachment: fixed;
   /* z-index: -1; */
@@ -582,7 +583,7 @@ works
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -591,7 +592,7 @@ works
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: crimson;
   text-decoration: none;
   cursor: pointer;
 }
@@ -615,6 +616,11 @@ Responsive
   }
   .work-image {
     flex: auto;
+  }
+}
+@media (max-width: 1030px) {
+  .works {
+    min-height: 150vh;
   }
 }
 
