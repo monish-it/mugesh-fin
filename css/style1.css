@@ -380,7 +380,7 @@ works
 }
 .work-container {
   margin: 30px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .work-row {
@@ -536,7 +536,7 @@ works
   width: 100%; /* Full width */
   min-height: 100vh;
   /* height: 100%; Full height */
-  /* overflow: auto; Enable scroll if needed */
+  overflow: auto;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
