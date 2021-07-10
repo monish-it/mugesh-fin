@@ -20,7 +20,7 @@ Navbar
   width: 100%;
   /* background-color: black; */
   padding: 20px 0;
-  z-index: 999;
+  z-index: 1;
   transition: all 0.8s ease;
 }
 .navbar.sticky {
@@ -33,7 +33,7 @@ Navbar
 }
 .navbar.sticky2 {
   padding: 5px 0;
-  background: #376fe0;
+  background: rgb(40, 93, 135);
 }
 .navbar.sticky3 {
   padding: 5px 0;
@@ -369,6 +369,7 @@ works
   background: url("../res/works/workbg.jpg") no-repeat center;
 
   background-attachment: fixed;
+  /* z-index: -1; */
 }
 .works h1 {
   text-align: center;
@@ -379,6 +380,7 @@ works
 }
 .work-container {
   margin: 30px;
+  z-index: 0;
 }
 
 .work-row {
@@ -403,7 +405,7 @@ works
 .work-image:hover {
   box-shadow: 0 10px 28px rgba(255, 255, 255, 0.7),
     0 1px 1px rgba(255, 255, 255, 0.7);
-  /* cursor: url("../res/cursor/rock.cur"), default; */
+  cursor: url("../res/cursor/rock.cur"), default;
 }
 
 .work-image img {
@@ -464,7 +466,20 @@ works
   display: none;
 }
 
-.work-more {
+/* .work-more {
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.6s;
+  transition-property: bottom;
+} */
+
+.work-read-more {
   position: absolute;
   background: rgba(255, 255, 255, 0);
   width: 100%;
@@ -477,21 +492,21 @@ works
   transition-property: bottom;
 }
 
-.work-image:hover .work-more {
+/* .work-image:hover .work-more {
+  bottom: 0;
+} */
+.work-image:hover .work-read-more {
   bottom: 0;
 }
 
-.work-more .work-read-more {
+.work-read-more {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
   font-family: "Ubuntu", sans-serif;
-  /* cursor: url("../res/cursor/rock.cur"), default; */
-}
-
-.work-more .work-read-more span {
-  font-weight: 900;
+  cursor: url("../res/cursor/rock.cur"), default;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .work-more .work-icon-links i {
@@ -502,6 +517,92 @@ works
 .work-more .work-icon-links a:not(:last-child) i {
   margin-right: 20px;
 }
+
+/* -------------------------------------
+                image popup work works
+                ------------------------------------ */
+#wimg {
+  transition: 0.3s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  min-height: 100vh;
+  /* height: 100%; Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: 30px auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /* ---------------------------------------------------------
 Responsive 
 --------------------------------------------------------- */
@@ -511,6 +612,9 @@ Responsive
   }
   .skill {
     width: 400px;
+  }
+  .work-image {
+    flex: auto;
   }
 }
 
@@ -608,6 +712,9 @@ Responsive
   .skill {
     width: 300px;
     margin-left: 10%;
+  }
+  .modal-content {
+    margin: auto;
   }
 }
 @media (max-width: 430px) {
