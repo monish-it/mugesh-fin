@@ -9,7 +9,7 @@ div {
   display: block;
 }
 html {
-  cursor: url("../res/cursor/white.cur"), default;
+  cursor: url("../res/cursor/white.cur"), auto;
   transition: all 0.3ms ease;
   scroll-behavior: smooth;
 }
@@ -688,21 +688,12 @@ Contact
 -------------------------------------------------------------- */
 
 .contacts {
-  background: url("../res/contacts/bg.jpg");
+  min-height: 100vh;
+  background: url("../res/contacts/bg.jpg") no-repeat;
   background-size: cover;
-}
-.contacts h1 {
-  text-align: center;
-  font-family: "Tourney", cursive;
-  color: white;
-  font-size: 50px;
-  padding-top: 30px;
-}
-.contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
 }
 .contact-section {
   width: 100%;
@@ -716,9 +707,9 @@ Contact
   max-width: 500px;
   line-height: 65px;
   padding-left: 50px;
-  font-family: "Ubuntu", sans-serif;
-
   font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
 }
 
 .contact-info i {
@@ -737,11 +728,19 @@ Contact
 }
 
 .contact-form h2 {
-  color: #fff;
   text-align: center;
-  font-size: 35px;
-  text-transform: uppercase;
+  font-family: "Tourney", cursive;
+  color: white;
+  font-size: 50px;
+  padding-top: 30px;
   margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.contactlink {
+  text-decoration: none;
+  color: inherit;
+  cursor: url("../res/cursor/rock.cur"), auto;
+  /* display: none; */
 }
 
 .contact-form .text-box {
@@ -768,8 +767,6 @@ Contact
   border: none;
   width: 100%;
   padding: 12px;
-  font-family: "Ubuntu", sans-serif;
-
   font-size: 15px;
   min-height: 200px;
   max-height: 400px;
@@ -789,14 +786,13 @@ Contact
   height: 40px;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Ubuntu", sans-serif;
-
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
   transition-property: background;
+  cursor: url("../res/cursor/rock.cur"), default;
 }
 
 .contact-form .send-btn:hover {
@@ -849,6 +845,7 @@ Contact
   border-left: 8px solid #ffa502;
   border-radius: 4px;
 }
+
 /* ---------------------------------------------------------
 Responsive 
 --------------------------------------------------------- */
