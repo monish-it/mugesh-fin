@@ -15,7 +15,7 @@ $(document).ready(function () {
             } else {
                 $('.navbar').removeClass("sticky2");
             }
-            if (this.scrollY > 2100) {
+            if (this.scrollY > 2075) {
                 $('.navbar').addClass("sticky3");
 
             } else {
