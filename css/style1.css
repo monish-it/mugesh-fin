@@ -686,30 +686,23 @@ animation
 /* --------------------------------------------------------------
 Contact
 -------------------------------------------------------------- */
-.contacttitle {
-  background: rgb(29, 26, 93);
-  background: linear-gradient(
-    177deg,
-    rgba(29, 26, 93, 1) 0%,
-    rgba(17, 17, 91, 1) 35%,
-    rgba(51, 75, 170, 1) 100%
-  );
+
+.contacts {
+  background: url("../res/contacts/bg.jpg");
+  background-size: cover;
 }
-.contacttitle h1 {
-  padding-top: 100px;
+.contacts h1 {
   text-align: center;
   font-family: "Tourney", cursive;
   color: white;
   font-size: 50px;
   padding-top: 30px;
 }
-.contacts {
-  min-height: 85vh;
-  background: url("../res/contacts/bg.jpg");
-  background-size: cover;
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 85vh;
 }
 .contact-section {
   width: 100%;
