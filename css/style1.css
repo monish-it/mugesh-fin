@@ -370,6 +370,15 @@ works
 
 .works {
   min-height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #0d0007,
+    #120213,
+    #10061c,
+    #030c26
+  );
   /* background: url("../res/works/workbg.jpg") center;
   background-attachment: fixed; */
   /* background: rgb(18, 30, 122);
@@ -621,6 +630,14 @@ animation
 
 .animation {
   /* background: url("../res/works/animationbg.jpg"); */
+  background-image: linear-gradient(
+    to bottom,
+    #030c26,
+    #030c27,
+    #030d28,
+    #030d29,
+    #030d2a
+  );
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
