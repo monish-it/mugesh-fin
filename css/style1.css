@@ -620,7 +620,7 @@ animation
 ------------------------------------------------------------------ */
 
 .animation {
-  background: url("../res/works/animationbg.jpg");
+  /* background: url("../res/works/animationbg.jpg"); */
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
