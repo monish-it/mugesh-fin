@@ -553,7 +553,7 @@ works
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: 3% auto;
+  margin: auto;
   display: block;
   width: 80%;
   max-width: 900px;
