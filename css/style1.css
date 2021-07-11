@@ -4,11 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+
 div {
   display: block;
 }
@@ -43,7 +39,7 @@ Navbar
 }
 .navbar.sticky3 {
   padding: 5px 0;
-  background: #fff;
+  background: rgb(5, 108, 199);
 }
 .max-width {
   max-width: 1300px;
@@ -95,10 +91,10 @@ Navbar
   color: rgb(255, 255, 255);
 }
 .navbar.sticky3 .logo a {
-  color: crimson;
+  color: white;
 }
 .navbar.sticky3 .menu a {
-  color: #000;
+  color: white;
 }
 
 .navbar .menu li {
@@ -633,6 +629,11 @@ animation
   padding: 100px 0 0;
   cursor: url("../res/cursor/rock.cur");
 }
+.main-content h2 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
 .frame-responsive {
   width: 100%;
   height: 0;
@@ -643,6 +644,11 @@ animation
   position: absolute;
   width: 100%;
   height: 100%;
+  box-shadow: 0 10px 28px rgba(255, 255, 255, 0.7),
+    0 1px 1px rgba(74, 180, 255, 0.7);
+}
+.frame-responsive iframe:hover {
+  cursor: url("../res/cursor/Amongus.cur");
 }
 /* ---------------------------------------------------------
 Responsive 
