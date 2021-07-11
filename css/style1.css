@@ -641,7 +641,10 @@ animation
 .main-content h2 {
   color: white;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 .frame-responsive {
   width: 100%;
