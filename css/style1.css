@@ -368,8 +368,14 @@ works
 ------------------------------------------------------------- */
 .works {
   min-height: 100vh;
-  background: url("../res/works/workbg.jpg") center;
-
+  /* background: url("../res/works/workbg.jpg") center;
+  background-attachment: fixed; */
+  background: rgb(18, 30, 122);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 30, 122, 1) 0%,
+    rgba(0, 0, 0, 1) 84%
+  );
   background-attachment: fixed;
   /* z-index: -1; */
 }
