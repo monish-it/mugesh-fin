@@ -21,6 +21,12 @@ $(document).ready(function () {
             } else {
                 $('.navbar').removeClass("sticky3");
             }
+            if (this.scrollY > 3910) {
+              $('.navbar').addClass("sticky4");
+
+          } else {
+              $('.navbar').removeClass("sticky4");
+          }
 
         } else {
             $('.navbar').removeClass("sticky");

@@ -42,6 +42,10 @@ Navbar
   padding: 5px 0;
   background: rgb(3, 21, 37);
 }
+.navbar.sticky4 {
+  padding: 5px 0;
+  background: rgb(6, 36, 70);
+}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
