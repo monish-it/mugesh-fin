@@ -716,6 +716,9 @@ Contact
   margin-right: 20px;
   font-size: 25px;
 }
+.contact-info i:hover {
+  color: crimson;
+}
 
 .contact-form {
   max-width: 700px;
@@ -737,7 +740,7 @@ Contact
   letter-spacing: 2px;
 }
 .contactlink {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: inherit;
   cursor: url("../res/cursor/rock.cur"), auto;
   /* display: none; */
@@ -763,6 +766,7 @@ Contact
 
 .contact-form textarea {
   background: #000;
+  font-family: "Ubuntu", sans-serif;
   color: #fff;
   border: none;
   width: 100%;
@@ -933,6 +937,9 @@ Responsive
   .home .homecontent h1 {
     font-size: 35px;
   }
+  .animation h1 {
+    font-size: 35px;
+  }
   .home .homecontent p {
     font-size: 25px;
   }
@@ -967,6 +974,10 @@ Responsive
   .modal-content {
     margin: auto;
   }
+  .contact-info {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
 }
 @media (max-width: 430px) {
   .skills h1 {
@@ -974,6 +985,16 @@ Responsive
   }
   .works h1 {
     font-size: 30px;
+  }
+  .animation h1 {
+    font-size: 30px;
+  }
+  .contact-info {
+    font-size: 12px;
+    padding-left: 0;
+  }
+  .contact-info i {
+    font-size: 15px;
   }
 }
 
